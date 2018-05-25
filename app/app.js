@@ -5,6 +5,9 @@ const init = (data) => {
 
     require('./config/app.config')(app);
 
+    const controllers = require('../controllers')(data);
+    require('./routes')(app, controllers);
+
     return Promise.resolve(app);
 };
 
