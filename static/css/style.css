@@ -1,0 +1,37 @@
+#login-container {
+    background: url('../img/coding.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    min-width: 100vw;
+    margin: 0;
+    filter: grayscale(84%);
+    opacity: 0.8;
+}
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 420px;
+    margin-top: -114px;
+    margin-left: -210px;
+    background: rgba(210, 210, 210, 0.8);
+    padding: 12px;
+    border: 2px solid #c2c2c2;
+    border-radius: 4px;
+}
+
+#login ::-webkit-input-placeholder {
+    color: #313131;
+}
+
+#login ::-moz-placeholder {
+    color: #313131;
+}
+
+#login .btn {
+    width: 100%;
+    margin-top: 16px;
+}
