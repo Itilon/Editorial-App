@@ -2,8 +2,8 @@ extends shared/_master
 
 block body
     #login-container
-    #login
-        form
-            input.z-depth-5(type="text" placeholder="Username")
-            input.z-depth-5(type="password" placeholder="Password")
+    #login.z-depth-5
+        form(action="/login" method="post")
+            input(type="text" name="username" placeholder="Username" required)
+            input(type="password" name="password" placeholder="Password" required)
             button.btn.btn-large Login
