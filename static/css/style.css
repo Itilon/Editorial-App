@@ -1,3 +1,7 @@
+.container {
+    max-width: 1400px;
+    width: 90%;
+}
 #login-container {
     background: url('../img/coding.jpg');
     background-size: cover;
@@ -34,4 +38,8 @@
 #login .btn {
     width: 100%;
     margin-top: 16px;
+}
+
+.client-viewer, .team-viewer {
+    margin-top: 24px;
 }

@@ -1,16 +1,27 @@
 mixin navigation
     header.navbar-fixed
-        nav.blue
+        nav.teal.lighten-2
             .container
                 .wrapper
                     a.sidenav-trigger(href="#" data-target="mobile-nav")
                         i.material-icons menu
                     ul.left.hide-on-med-and-down
                         li
-                            a(href="#") Home
+                            a(href="/dashboard/" + user._id) Home
+                        li
+                            a(href="#") My Clients
                         li
                             a(href="#") My Tasks
                         li
                             a(href="#") Create a Task
                         li
-                            a(href="#") Team
+                            a(href="#") My Team
+    ul#mobile-nav.sidenav
+        li
+            a(href="/dashboard/" + user._id) Home
+        li
+            a(href="#") My Tasks
+        li
+            a(href="#") Create a Task
+        li
+            a(href="#") My Team

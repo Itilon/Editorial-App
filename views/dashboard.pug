@@ -3,6 +3,35 @@ include shared/_navigation
 include shared/_footer
 
 block body
-    +navigation
-    main
+    +navigation(user)
+    main.container
+        .row
+            .col.m6
+                section.client-viewer.z-depth-5
+                    ul.collection.with-header
+                        li.collection-header
+                            h5 My Clients
+                        li.collection-item.avatar.teal.lighten-5
+                            img.circle(src="/static/img/dow_jones_logo.jpg")
+                            | Dow Jones
+                        li.collection-item.avatar.teal.lighten-4
+                            img.circle(src="/static/img/griphon_logo.jpg")
+                            | Griphon Strategies
+                        li.collection-item.avatar.teal.lighten-5
+                            img.circle(src="/static/img/red_flag_group_logo.jpg")
+                            | Red Flag Group
+
+            .col.m6
+                section.team-viewer.z-depth-5
+                    ul.collection.with-header
+                        li.collection-header
+                            h5 My team
+                        li.collection-item.avatar.teal.lighten-5
+                            | Goshko
+                        li.collection-item.avatar.teal.lighten-4
+                            | Toshko
+                        li.collection-item.avatar.teal.lighten-5
+                            | Jane
+                        li.collection-item.avatar.teal.lighten-4
+                            | Jack
     +footer
