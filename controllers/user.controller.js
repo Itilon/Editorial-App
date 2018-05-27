@@ -21,7 +21,20 @@ module.exports = (data) => {
         auth(req, res, next);
     };
 
+    const getDashboard = (req, res) => {
+        if (!req.isAuthenticated()) {
+            return res.redirect('/401');
+        }
+
+        const user = req.user;
+
+        return res.render('dashboard', {
+            user: user
+        });
+    };
+
     return {
-        login
+        login,
+        getDashboard
     }
 }

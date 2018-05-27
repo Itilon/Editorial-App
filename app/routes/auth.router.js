@@ -8,6 +8,8 @@ const attach = (app, controllers) => {
     router
         .post('/login', userController.login)
 
+        .get('/dashboard/:id', userController.getDashboard);
+
     app.use('/', router);
 };
 

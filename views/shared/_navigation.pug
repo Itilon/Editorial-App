@@ -1,2 +1,16 @@
 mixin navigation
-    header
+    header.navbar-fixed
+        nav.blue
+            .container
+                .wrapper
+                    a.sidenav-trigger(href="#" data-target="mobile-nav")
+                        i.material-icons menu
+                    ul.left.hide-on-med-and-down
+                        li
+                            a(href="#") Home
+                        li
+                            a(href="#") My Tasks
+                        li
+                            a(href="#") Create a Task
+                        li
+                            a(href="#") Team
