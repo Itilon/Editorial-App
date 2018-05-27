@@ -3,7 +3,6 @@ const passport = require('passport');
 module.exports = (data) => {
     const login = (req, res, next) => {
         const auth = passport.authenticate('local', (error, user) => {
-
             if (error) {
                 next(error);
                 return;
@@ -19,7 +18,7 @@ module.exports = (data) => {
             });
         });
 
-        console.log(auth);
+        auth(req, res, next);
     };
 
     return {
